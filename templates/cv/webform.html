@@ -1,0 +1,64 @@
+{% extends "cv/base.html"%}
+{% block content %}    
+<h3> </h3>
+<h6> </h6>
+<h6>.</h6>
+<h1>Contact me here</h1>
+<p>Fill the form below to talk to me directly</p>
+    <form action="{%url 'cv-web'%}" method="POST">
+    {% csrf_token %}
+        <table><b>
+            <tr>
+                <td>
+                  Name:
+                </td>
+                <td>
+                    <input type="text"  placeholder="...John...." name="name">
+                </td>
+            </tr>
+
+    
+            <tr>
+                <td>
+                    Email Address:
+                </td>
+                <td>
+                    <input type="email" placeholder="....john@email.com..." name="email">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                        Mobile:
+                    </td>
+                    <td>
+                        <input type="number"  placeholder="+234 ..." name="mobile">
+                    </td>
+                </tr>
+            <tr>
+                <td>
+                  City:
+                </td>
+                <td>
+                    <input type="text"  placeholder="...lagos...." name="city">
+                </td>
+            </tr>
+    &nbsp;
+
+                            <tr>
+                                    <td>
+                                            Leave a message :
+                                        </td>
+                                        <td>
+                                            <textarea type="text" name="message" rows="10" cols="40" style="margin-left: 1px"placeholder="optional">
+                                            </textarea>
+                                        </td>
+                             <tr>
+                                 <td>
+                                     <input type="submit" value="subit">
+    
+                                 </td>
+                             </tr>
+        </b>
+        </table>
+    </form>
+    {%endblock content%}

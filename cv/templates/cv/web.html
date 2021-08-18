@@ -1,0 +1,91 @@
+{% extends "cv/base.html"%}
+{% block content %}
+{%load static%} 
+<section>
+        <!--text----------------------->
+		<div class="text-container" id="Home">
+			<p>Hello,</p>
+		    <p>I&#8217;M NKEM</p>
+			<p>a Software engineer, Designer <br> & Developer</p>
+			<a href ="mailto:nkemsileslie@gmail.com"><button>Contact Me</button></a>
+			<a href="cv.pdf" download><button class="download-cv">Download CV</button></a>
+
+		</div>
+
+  
+    </section>
+    <div class="about-container" id="About">
+        <!--img-->
+        <img src="{% static 'img/nkem.JPG'%}">
+        <!--about-me-text-->
+            <div class="about-text">
+            <p>About Me</p>
+            <p> Hi,</p>
+            <p> My name is Onyekwuluje Nkemsinachi Leslie.I am currrently enrolled in my second year as a student of Software Engineering at Babcock University, Ilishan-Remo. I graduated from Mea Mater Elizabeth High School, Enugu State with 7 Distinctions in my O' Levels. Aside from my immense passion for programming, I possess a profound affinity and intrigue for solving real life problems through Software Development, Machine Learning and Artificial Intelligence.As a self-taught programmer, my prefered programming languages are C# and Pyton. I have built several personal projects in these languages.</p>
+            <a href ="mailto:nkemsileslie@gmail.com"><button>Contact Me</button></a>
+            <a href="../cv/cv.pdf" download><button>Download CV</button></a>
+
+            </div>
+
+        </div>
+        <!--Projects----->
+        <div class="projects " id="projects">
+            <!--text-->
+            <div class="projects-text ">
+        <p>Projects</p>
+        <p>Brife overview</p>
+        <p> I am well experienced in object-oriented programming; developing, testing and debugging code; designing interfaces. Also very familiar with both Windows and Linux Operating Systems. I learn and master new technologies qickly; successful working in both team and self-directed settings.;</p>
+        <p>Here are a few of my projects</p>
+        </div>
+        <!--box-------------->
+        <div class="box-container">
+            <!--1------------->
+                <div class="box-1">
+                <span>1</span>
+                <p class="heading">Web Design</p>
+                <p class="details">Web design projects with;<br>~Html<br>~Java<br>~Pyton(django)</p>
+                <a href="https://github.com/nkemsileslie"><button>See Projects</button></a>
+                </div>
+             <!--2------------->
+			<div class="box-2">
+                <span>2</span>
+                <p class="heading">Graphic Design</p>
+                <p class="details">Excellent IT skills, especially with design and photo-editing software.
+                    Exceptional creativity and innovation.
+                    Excellent time management and organisational skills.</p>
+                <a href="https://github.com/nkemsileslie"><button>See More</button></a>
+                </div>
+            <!--3------------->
+                <div class="box-3">
+                <span>3</span>
+                
+                <p class="heading">Game Development</p>
+
+                <p class="details">I have a strong intrest in game development, I'm creativite.
+                    with passion for video games
+                    and wide-ranging knowledge of gaming trends.
+                    I have a Strong analytical frame of mind.
+                    and the ability to work as part of a team.
+                    </A></p>
+                <a href="https://github.com/nkemsileslie"><button>Veiw more</button></a>
+                </div>    
+        </div>
+        </div>
+         <!--contact me-->
+	<div class="contact-me" id="contact">
+        
+		<p>If You Would Like To Contact Me</p>
+		<a href ="mailto:nkemsileslie@gmail.com"><button>Contact Me</button></a>
+	</div>
+
+ <!--footer-->
+
+<footer>
+      <!--heading-->
+      <p>Nkemsileslie</p>
+      <!--paragraph-->
+      <p>Thank you for visiting my Resume website</p>
+      <!--copyright-->
+      <p class="copyright">Copyright by Onyekwuluje Nkemsinachi</p>
+</footer>
+{%endblock content%}
